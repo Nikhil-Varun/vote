@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="margin: 0">
+    <h1 style="text-align: center">Class Monitor Vote</h1>
+    <h1 style="text-align: center">Total Votes: <span id="total">0</span></h1>
+
+    <form id="voteForm">
+      <label for="name">Student Name:</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        style="margin-right: 20px"
+        required
+      />
+
+      <label for="monitor">Choose Monitor:</label>
+      <select name="monitor" id="monitor" style="margin-right: 20px">
+        <option value="Suresh">Suresh</option>
+        <option value="Deepank">Deepank</option>
+        <option value="Abhik">Abhik</option>
+      </select>
+      <button type="submit">Vote</button>
+      <br /><br />
+      <h1>Suresh</h1>
+      <h4>Total: <span id="total1">0</span></h4>
+      <br /><br />
+      <h1>Deepank</h1>
+      <h4>Total: <span id="total2">0</span></h4>
+      <br /><br />
+      <h1>Abhik</h1>
+      <h4>Total: <span id="total3">0</span></h4>
+    </form>
+    <ul id="voteList"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

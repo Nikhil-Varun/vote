@@ -23,6 +23,9 @@ function handleFormSubmit(event) {
   else if (monitor == "Deepank") total2++;
   else total3++;
 
+  total1.innerHTML = parseInt(total1);
+  total2.innerHTML = parseInt(total2);
+  total3.innerHTML = parseInt(total3);
   total.innerHTML = parseInt(total);
 
   total = total1 + total2 + total3;
